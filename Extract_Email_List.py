@@ -2,10 +2,15 @@
 
 
 import re
+my_list = []
 my_file = open("D:\\rand.txt",'r')
-
-while my_file:
+line = my_file.readline()
+while line:
     line = my_file.readline()
-    result = re.search(r"\w+@\w+.com",line)
+    result = re.search(r"\w+@\w+.fr",line)
     if(result):
-        print(result.group())
+        my_list.append(result.group())
+
+for x in my_list:
+    print(x)
+
