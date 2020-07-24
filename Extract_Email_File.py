@@ -1,7 +1,7 @@
 #This code will read the data from a file and then it will extract emails ending with .com .fr .de .net .pk .it and .in and after that it will store emails to a new file. 
 
 import re
-my_file = open("file.txt",'r')
+my_file = open("file.txt",'r',encoding="utf8")
 line = my_file.readline()
 while line:
     line = my_file.readline()
