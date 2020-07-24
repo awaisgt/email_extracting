@@ -3,7 +3,7 @@
 
 import re
 my_list = []
-my_file = open("file.txt",'r')
+my_file = open("file.txt",'r',encoding="utf8")
 line = my_file.readline()
 while line:
     line = my_file.readline()
